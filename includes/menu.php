@@ -10,9 +10,11 @@
     <header>
         <div class="container">
             <div class="logo">ForHealth, s.r.o.</div>
+            <a class="menu-toggle" id="menu-toggle">&#9776;<!-- hamburger icon --></a>
+
             <nav>
                 <ul>
-                    <li><a href="#home">Domů</a></li>
+                    <li><a href="index.php">Domů</a></li>
                     <li><a href="aboutus.php">O nás</a></li>
                     <li><a href="service.php">Služby</a></li>
                     <li><a href="contact.php">Kontakt</a></li>

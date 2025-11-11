@@ -10,7 +10,7 @@
     </div>
 </section>
 
-<main class="container">
+<main class="container" style="flex-direction: column;">
 
     <section id="o-nas">
         <h2>O nás</h2>
