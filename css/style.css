@@ -33,6 +33,14 @@ header .container {
     font-weight: bold;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100vw;
+}
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -73,7 +81,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.btn {
+.hero-btn {
     background: white;
     color: #1d4ed8;
     padding: 10px 20px;
@@ -82,8 +90,12 @@ nav a:hover {
     font-weight: bold;
 }
 
-.btn:hover {
+.hero-btn:hover {
     background: #f3f4f6;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 /* Sekce obsahu */
@@ -98,14 +110,14 @@ h2 {
 }
 
 /* Karty služeb */
-.cards {
+#service .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
 }
 
-.card {
+#service .card {
     background: white;
     flex: 1 1 calc(33% - 20px);
     padding: 20px;
@@ -113,8 +125,20 @@ h2 {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card h3 {
+#service .card h3 {
     margin-top: 0;
+}
+
+#aboutus .card {
+    width:500px; 
+    height:500px;
+    background-color:red;
+    margin:5px;
+}
+
+#aboutus .cards .image-part, #aboutus .cards .image-part {
+    width: 100%;
+    height: 50%;
 }
 
 /* Kontakt */
@@ -144,8 +168,20 @@ footer {
 
     header .container {
         flex-direction: column;
+        justify-content: space-between;
     }
 
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-part1 {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+   
     nav li {
         margin: 10px 0;
     }
@@ -168,23 +204,15 @@ footer {
         font-size: 1.8em;
         cursor: pointer;
         color: white;
-        position: absolute;
-        padding-right: 10px;
+        padding-right: 15px;
         right: 0;
+        top: 0;
     }
 
-    /* Make sure nav stays visible */
+    /* Make sure nav stays visible 
     nav {
         width: 100%;
     }
-
-    
-}
-
-/* Desktop: always show nav */
-@media (min-width: 769px) {
-    .menu-toggle {
-        display: none;
-    }
+    */
 }
 

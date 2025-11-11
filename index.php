@@ -6,19 +6,14 @@
     <div class="hero-content">
         <h1>Dopřejte tělu špičkovou výživu.</h1>
         <p>Profesionální služby pro jakoukoli věkovou kategorii.</p>
-        <a href="#kontakt" class="btn">Kontaktujte nás</a>
+        <a href="contact.php" class="hero-btn">Kontaktujte nás</a>
     </div>
 </section>
 
 <main class="container" style="flex-direction: column;">
 
-    <section id="o-nas">
-        <h2>O nás</h2>
-        <p>Jsme dynamická firma s dlouholetou zkušeností v oboru. Naším cílem je poskytovat kvalitní služby a individuální přístup ke každému klientovi.</p>
-    </section>
-
-    <section id="sluzby">
-        <h2>Naše služby</h2>
+    <section id="service">
+        <h2>Naše Akchniinabiidky</h2>
         <div class="cards">
             <div class="card">
                 <h3>Nabidka1</h3>
@@ -33,13 +28,6 @@
                 <p>Nabidka3 - text</p>
             </div>
         </div>
-    </section>
-
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p><strong>Email:</strong> <a href="mailto:forhealth@gmail.com">forhealthsro@gmail.com</a></p>
-        <p><strong>Telefon:</strong> TELEFON UNKNOWN </p>
-        <p><strong>Adresa:</strong> Erbenova 184, 344 01 Domažlice</p>
     </section>
 
 </main>
