@@ -11,7 +11,7 @@
         <nav class="container">
                 <div class="nav-part1">
                     <div class="logo">ForHealth, s.r.o.</div>
-                    <div style="height: 100%; width: auto;">
+                    <div style="height: 37px; width: 37px;">
                         <a class="menu-toggle" id="menu-toggle" style="width:auto; height:100%; background-color:white;"></a>
                     </div>
                 </div>
