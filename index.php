@@ -1,6 +1,4 @@
-<?php 
-    include "includes/menu.php"
-?>
+<?php include "includes/menu.php" ?>
 
 <section id="home" class="hero">
     <div class="hero-content">
@@ -32,6 +30,4 @@
 
 </main>
 
-<?php
-    include "includes/footer.php"
-?>
+<?php include "includes/footer.php" ?>

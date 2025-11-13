@@ -70,8 +70,11 @@ nav a:hover {
 
 /* Hero sekce k*/
 .hero {
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608848461950-0fe51dfc41cb%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%253D%253D%26w%3D1000%26q%3D80&f=1&nofb=1&ipt=e8c8730ec140f94f5ea7cef2763c4ea4544c766706db851db8f356be99942c7d);
-    /*linear-gradient(to right, #2563eb, #1d4ed8);*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608848461950-0fe51dfc41cb%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%253D%253D%26w%3D1000%26q%3D80&f=1&nofb=1&ipt=e8c8730ec140f94f5ea7cef2763c4ea4544c766706db851db8f356be99942c7d);*/
+    background-color: #a8ac27;
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -118,6 +121,7 @@ h2 {
 /* Karty služeb */
 #service .cards {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;

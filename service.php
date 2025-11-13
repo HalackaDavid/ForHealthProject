@@ -19,6 +19,36 @@
             "desc3",
             "img3",
         ],
+        [
+            "1500",
+            "desc1",
+            "img1",
+        ],
+        [
+            "900",
+            "desc2",
+            "img2",
+        ],
+        [
+            "100",
+            "desc3",
+            "img3",
+        ],
+        [
+            "1500",
+            "desc1",
+            "img1",
+        ],
+        [
+            "900",
+            "desc2",
+            "img2",
+        ],
+        [
+            "100",
+            "desc3",
+            "img3",
+        ],
     ];
 ?>
 
@@ -29,7 +59,7 @@
                 for($i=0;$i<count($arr);$i++) {
                     echo "<div class='card'>
                             <div class='card-image' style='background-color: url(images/service/".$arr[$i][2].");'></div>
-                            <div class='card-data'>".$arr[$i][0]." Kc<br>".$arr[$i][1]."</div>
+                                <div class='card-data'>".$arr[$i][0]." Kc<br>".$arr[$i][1]."<br> Dokosiku</div>
                         </div>";
                 }
             ?>
