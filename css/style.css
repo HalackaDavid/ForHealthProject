@@ -1,61 +1,55 @@
-/* Základní nastavení */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    color: #333;
-    background-color: #f9f9f9;
-    line-height: 1.6;
+:root {
+    --bg-main-black: #000;
+    --text-main-color: white;
 }
 
-.container {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.indent {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* Hlavička */
+
+body {
+    min-height: 100vh;
+    color: var(--text-main-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 65px min(calc(100vh - 65px - 95px)) 95px;
+    grid-template-columns: 100vw 100vw 100vw;
+    grid-auto-flow: column;
+}
+
+
 header {
-    /* background: #1f2937; */
-    background: #000;
-    color: white;
-    padding: 15px 0;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
+    height: 100%;
+    background-color: var(--bg-main-black);
 }
 
 nav {
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: baseline;
-    width: 100vw;
 }
 
-.nav-part1 {
-    display:flex;
-    flex-direction: row;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav > div {
+    height: 100%;
     display: flex;
-}
-
-nav li {
-    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
@@ -67,184 +61,37 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
-nav .hamber {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 160%;
+
+.nav-part2 {
+    flex-direction: row;
+}
+
+.nav-part2 > div {
+    padding: 0 10px;
+}
+
+.nav-part2 a {
+    color: var(--text-main-color);
+}
+
+
+.content-container {
     height: 100%;
 }
 
-nav .hamb {
-    background-color: black;
-    width: 80%;
-    height: 20%;
-}
-/* Hero sekce k*/
-.hero {
+
+footer {
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608848461950-0fe51dfc41cb%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%253D%253D%26w%3D1000%26q%3D80&f=1&nofb=1&ipt=e8c8730ec140f94f5ea7cef2763c4ea4544c766706db851db8f356be99942c7d);*/
-    background-color: #a8ac27;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+    align-items: center;
+    background-color: var(--bg-main-black);
 }
 
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.hero-btn {
-    background: white;
-    color: #1d4ed8;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero-btn:hover {
-    background: #f3f4f6;
-}
-
-.menu-toggle {
-    display: none;
-}
-
-/* Sekce obsahu */
-main section {
-    margin: 60px 0;
-}
-
-h2 {
-    color: #1d4ed8;
-    border-left: 5px solid #1d4ed8;
-    padding-left: 10px;
-}
-
-/* Karty služeb */
-#service .cards {
+footer > div {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-#service .card {
-    /* background: white; */
-    display: flex;
-    flex-direction: column;
-    background: grey;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 250px;
-    height: 450px;
-}
-
-#service .card > .card-image {
-    width: 100%;
-    height: 70%;
-}
-
-#service .card > .card-data {
-    width: 100%;
-    height: 30%;
-}
-
-#service .card h3 {
-    margin-top: 0;
-}
-
-#aboutus .cards {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-#aboutus .card {
-    width: 200px; 
-    height: 350px;
-    background-color: #606060;
-    color: white;
-    margin: 5px;
-}
-
-#aboutus .cards .image-part, #aboutus .cards .image-part {
-    width: 100%;
-    height: 50%;
-}
-
-/* Kontakt */
-#kontakt a {
-    color: #1d4ed8;
-    text-decoration: none;
-}
-
-#kontakt a:hover {
-    text-decoration: underline;
-}
-
-/* Patička */
-footer {
-    /* background: #1f2937; */
-    background: #000;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-/* Responzivita */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    .nav-part1 {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-   
-    nav li {
-        margin: 10px 0;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        font-size: 1.8em;
-        cursor: pointer;
-        color: white;
-        padding-right: 15px;
-    }
-}
-
+@media (max-width: 768px) {}

@@ -7,29 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="nav-part1">
-                <div class="logo">ForHealth, s.r.o.</div>
-                <div style="height: 37px; width: 37px;">
-                    <a class="menu-toggle" id="menu-toggle" style="width:auto; height:100%; background-color:white;">
-                        <div class="hamber">
-                            <div class="hamb"></div>
-                            <div class="hamb"></div>
-                            <div class="hamb"></div>
-                        </div>
-                    </a>
+    <div class="container">
+        <header>
+            <nav class="indent">
+                <div class="nav-part1">
+                    <div class="logo">ForHealth, s.r.o.</div>
+                    <div>
+                        <a class="menu-toggle" id="menu-toggle"></a>
+                    </div>
                 </div>
-            </div>
 
-            <div>
-                <ul>
-                    <li><a href="index.php">Domů</a></li>
-                    <li><a href="aboutus.php">O nás</a></li>
-                    <li><a href="service.php">Služby</a></li>
-                    <li><a href="contact.php">Kontakt</a></li>
-                    <li><a href="service-na-miru.php">Service na miru</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+                <div class="nav-part2">
+                    <div><a href="index.php">Domů</a></div>
+                    <div><a href="aboutus.php">O nás</a></div>
+                    <div><a href="service.php">Služby</a></div>
+                    <div><a href="contact.php">Kontakt</a></div>
+                    <!--<div><a href="service-na-miru.php">Service na miru</a></div> -->
+                </div>
+            </nav>
+        </header>
