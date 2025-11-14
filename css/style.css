@@ -59,15 +59,28 @@ nav li {
 }
 
 nav a {
-    color: white;
     text-decoration: none;
     font-weight: 500;
+    color: white;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
+nav .hamber {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 160%;
+    height: 100%;
+}
 
+nav .hamb {
+    background-color: black;
+    width: 80%;
+    height: 20%;
+}
 /* Hero sekce k*/
 .hero {
     display: flex;
@@ -173,8 +186,6 @@ h2 {
     height: 50%;
 }
 
-#aboutus > .image-part {}
-
 /* Kontakt */
 #kontakt a {
     color: #1d4ed8;
@@ -234,14 +245,6 @@ footer {
         cursor: pointer;
         color: white;
         padding-right: 15px;
-        right: 0;
-        top: 0;
     }
-
-    /* Make sure nav stays visible 
-    nav {
-        width: 100%;
-    }
-    */
 }
 
