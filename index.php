@@ -10,8 +10,12 @@
         </div>
     </section>
 
-    <section id="service">
-        <h2>Naše akční nabídky</h2>
+    <section>
+        
+    </section>
+    
+    <section id="service" class="indent">
+        <h2>Naše akční nabídky</h2> 
         <div class="cards">
             <div class="card">
                 <div class="card-image"></div>
@@ -20,6 +24,7 @@
                     <p>Nabidka1 - text</p>
                 </div>
             </div>
+            
             <div class="card">
                 <div class="card-image"></div>
                 <div class="card-date">
@@ -27,6 +32,7 @@
                     <p>Nabidka2 - text</p>
                 </div>
             </div>
+            
             <div class="card">
                 <div class="card-image"></div>
                 <div class="card-date">

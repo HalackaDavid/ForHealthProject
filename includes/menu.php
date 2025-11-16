@@ -21,7 +21,7 @@
                     <div><a href="index.php">Domů</a></div>
                     <div><a href="aboutus.php">O nás</a></div>
                     <div><a href="service.php">Služby</a></div>
-                    <div><a href="FHP.b1/index.php">Kontakt</a></div>
+                    <div><a href="FHP.b/index.php">Kontakt</a></div>
                     <!--<div><a href="service-na-miru.php">Service na miru</a></div> -->
                 </div>
             </nav>
