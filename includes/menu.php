@@ -12,7 +12,7 @@
             <nav class="indent">
                 <div class="nav-part1">
                     <div class="logo">ForHealth, s.r.o.</div>
-                    <div>
+                    <div style="width:40px; height:40px;">
                         <a class="menu-toggle" id="menu-toggle"></a>
                     </div>
                 </div>

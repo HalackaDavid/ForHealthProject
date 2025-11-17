@@ -12,7 +12,7 @@
 
 .indent {
     width: 90%;
-    max-width: 1920px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@ body {
 
 
 header {
+    grid-row: 1/2;
     height: 100%;
     background-color: var(--bg-main-black);
 }
@@ -80,6 +81,7 @@ nav a:hover {
 
 
 .content-container {
+    grid-row: 2/3;
     height: 100%;
 }
 
@@ -144,7 +146,7 @@ nav a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 250px;
+    width: 300px;
     height: 450px;
 }
 
@@ -160,6 +162,7 @@ nav a:hover {
 
 
 footer {
+    grid-row: 3/4;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -174,4 +177,69 @@ footer > div {
 }
 
 @media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 65px max-content minmax(100vh, max-content) 95px;
+        grid-auto-flow: row;
+    }
+
+    header .container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-part1 {
+        grid-row: 1/2;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-part2 {
+        display: none;
+        grid-row: 2/3;
+    }
+   
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.8em;
+        cursor: pointer;
+        color: white;
+        padding-right: 15px;
+    }
+
+    #menu-toggle {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .content-container {
+        grid-row: 3/4;
+    }
+
+    footer {
+        grid-row: 4/5;
+    }
 }
