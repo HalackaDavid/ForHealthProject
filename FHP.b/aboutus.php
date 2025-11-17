@@ -40,7 +40,7 @@
     ];  
 ?>
 
-<div class="container">
+<main class="indent">
     <section>
         <h2>O nás</h2>
         <p>Jsme dynamická firma s dlouholetou zkušeností v oboru. Naším cílem je poskytovat kvalitní služby a individuální přístup ke každému klientovi.</p>
@@ -52,17 +52,16 @@
                 for ($i=0; $i < count($arr); $i++) {
                     echo "<div class='card'>
                             <div class='image-part' style='background-size:cover; background-image:url(".$arr[$i][2].");'></div>
-                            <div class='data-part container'>
+                            <div class='data-part indent'>
                                 <div>".$arr[$i][0]."</div>
                                 <div>".$arr[$i][1]."</div>
-                                <div>".$arr[$i][2]."</div>
                             </div>
                         </div>";
                 }
             ?>
         </div>
    </section>
-</div>
+</main>
     
 
 <?php include "includes/footer.php" ?>

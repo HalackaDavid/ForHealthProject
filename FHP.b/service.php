@@ -1,6 +1,4 @@
-<?php 
-    include "includes/menu.php"
-?>
+<?php include "includes/menu.php" ?>
 
 <?php
     $arr = [
@@ -52,23 +50,25 @@
     ];
 ?>
 
-<div class="container">
-    <section id="service">
-        <div class="cards">
-            <?php
-                for($i=0;$i<count($arr);$i++) {
-                    echo "<div class='card'>
-                            <div class='card-image' style='background-color: url(images/service/".$arr[$i][2].");'></div>
-                            <div class='card-data'>".$arr[$i][0]." Kc<br>".$arr[$i][1]."<br> Dokosiku</div>
-                        </div>";
-                }
-            ?>
-        </div>
-    </section>
-</div> 
+<div class="content-container">
+    <main class="indent">
+        <section id="service">
+            <div class="cards">
+                <?php
+                    for($i=0;$i<count($arr);$i++) {
+                        echo "<div class='card'>
+                                <div class='card-image' style='background-color: url(images/service/".$arr[$i][2].");'></div>
+                                <div class='card-data'>
+                                    <div>".$arr[$i][0]."Kč</div>
+                                    <div>".$arr[$i][1]."</div>
+                                    <div>Dokošíku</div>
+                                </div>
+                            </div>";
+                    }
+                ?>
+            </div>
+        </section>
+    </main> 
+</div>
 
-<?php
-    include "includes/footer.php"
-?>
-
- 
+<?php include "includes/footer.php" ?>

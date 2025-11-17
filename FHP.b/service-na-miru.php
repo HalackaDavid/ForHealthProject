@@ -1,6 +1,6 @@
 <?php include "includes/menu.php" ?>
 
-<div class="container">
+<div class="indent">
     
 </div>
 
