@@ -1,8 +1,8 @@
 <?php include "includes/menu.php" ?>
 
 <div class="content-container">
-    
-    <section class="hero">
+
+    <section id="home" class="hero">
         <div class="hero-content">
             <h1>Dopřejte tělu špičkovou výživu.</h1>
             <p>Profesionální služby pro jakoukoli věkovou kategorii.</p>
@@ -10,38 +10,34 @@
         </div>
     </section>
 
-    <section>
-        
-    </section>
-    
-    <section id="service" class="indent">
-        <h2>Naše akční nabídky</h2> 
-        <div class="cards">
-            <div class="card">
-                <div class="card-image"></div>
-                <div class="card-date">
-                    <h3>Nabidka1</h3>
-                    <p>Nabidka1 - text</p>
+    <main class="indent">
+        <section id="service">
+            <h2>Naše akční nabídky</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-date">
+                        <h3>Nabidka1</h3>
+                        <p>Nabidka1 - text</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-date">
+                        <h3>Nabidka2</h3>
+                        <p>Nabidka2 - text</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-date">
+                        <h3>Nabidka3</h3>
+                        <p>Nabidka3 - text</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="card">
-                <div class="card-image"></div>
-                <div class="card-date">
-                    <h3>Nabidka2</h3>
-                    <p>Nabidka2 - text</p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-image"></div>
-                <div class="card-date">
-                    <h3>Nabidka3</h3>
-                    <p>Nabidka3 - text</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 </div>
 
