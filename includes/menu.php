@@ -29,7 +29,6 @@
                         <li><a href="aboutus.php">O nás</a></li>
                         <li><a href="service.php">Služby</a></li>
                         <li><a href="contact.php">Kontakt</a></li>
-                        <li><a href="service-na-miru.php">Service na míru</a></li>
                     <ul>
                 </div>
             </nav>

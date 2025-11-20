@@ -5,37 +5,37 @@
         [
             "Jakub Böhm",
             "Ředitel",
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608848461950-0fe51dfc41cb%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%253D%253D%26w%3D1000%26q%3D80&f=1&nofb=1&ipt=e8c8730ec140f94f5ea7cef2763c4ea4544c766706db851db8f356be99942c7d",
-        ],
-        [
-            "Filip Procházka",
-            "Účetník",
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608848461950-0fe51dfc41cb%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%253D%253D%26w%3D1000%26q%3D80&f=1&nofb=1&ipt=e8c8730ec140f94f5ea7cef2763c4ea4544c766706db851db8f356be99942c7d",
-        ],
-        [
-            "Honza Kupeček",
-            "Jednatel",
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608848461950-0fe51dfc41cb%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%253D%253D%26w%3D1000%26q%3D80&f=1&nofb=1&ipt=e8c8730ec140f94f5ea7cef2763c4ea4544c766706db851db8f356be99942c7d",
-        ],
-        [
-            "František Kellner",
-            "Zástupce Ředitele",
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608848461950-0fe51dfc41cb%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%253D%253D%26w%3D1000%26q%3D80&f=1&nofb=1&ipt=e8c8730ec140f94f5ea7cef2763c4ea4544c766706db851db8f356be99942c7d",
+            "bohm.jpg",
+
         ],
         [
             "Tomáš Hepner",
-            "Unknown",
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608848461950-0fe51dfc41cb%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%253D%253D%26w%3D1000%26q%3D80&f=1&nofb=1&ipt=e8c8730ec140f94f5ea7cef2763c4ea4544c766706db851db8f356be99942c7d",
+            "Jednatel",
+            "hepner.jpg",
+        ],        [
+            "Filip Procházka",
+            "Finanční ředitel",
+            "prochazka.jpg",
+        ],
+        [
+            "Jan Kupeček",
+            "Personalista",
+            "kupecek.jpg",
+        ],
+        [
+            "František Kellner",
+            "Marketér",
+            "kellner.jpg",
         ],
         [
             "Kristýna Pechová",
-            "Účetní",
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608848461950-0fe51dfc41cb%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%253D%253D%26w%3D1000%26q%3D80&f=1&nofb=1&ipt=e8c8730ec140f94f5ea7cef2763c4ea4544c766706db851db8f356be99942c7d",
+            "Sekretářka",
+            "pechova.jpg",
         ],
         [
             "David Halačka",
-            "Unknown",
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608848461950-0fe51dfc41cb%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%253D%253D%26w%3D1000%26q%3D80&f=1&nofb=1&ipt=e8c8730ec140f94f5ea7cef2763c4ea4544c766706db851db8f356be99942c7d",
+            "Asistent",
+            "halacka.jpg",
         ],
     ];  
 ?>
@@ -53,7 +53,7 @@
                 <?php 
                     for ($i=0; $i < count($arr); $i++) {
                         echo "<div class='card'>
-                                <div class='image-part' style='background-size:cover; background-image:url(".$arr[$i][2].");'></div>
+                                <div class='image-part' style='background-size:cover; background-image:url(images/".$arr[$i][2].");'></div>
                                 <div class='data-part indent'>
                                     <div>".$arr[$i][0]."</div>
                                     <div>".$arr[$i][1]."</div>
@@ -66,5 +66,6 @@
     </main>
 
 </div>
+
 
 <?php include "includes/footer.php" ?>

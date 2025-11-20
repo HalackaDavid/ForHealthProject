@@ -1,6 +1,8 @@
 :root {
     --bg-main-black: #000;
+    --fg-main-black: #000;
     --text-main-color: white;
+    --main-green: #a8ac27;
 }
 
 * {
@@ -16,7 +18,7 @@ html {
 body {
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #000;
+    color: var(--fg-main-black);
     background-color: #f9f9f9;
     line-height: 1.6;
 }
@@ -35,8 +37,8 @@ body {
 
 
 header {
-    background: #000;
-    color: white;
+    background: var(--bg-main-black);
+    color: var(--text-main-color);
     padding: 15px 0;
     flex-shrink: 0;
     min-height: 70px;
@@ -78,7 +80,7 @@ nav li {
 nav a {
     text-decoration: none;
     font-weight: 500;
-    color: white;
+    color: var(--text-main-color);
 }
 
 nav a:hover {
@@ -109,8 +111,8 @@ nav .hamb {
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: #a8ac27;
-    color: white;
+    background-color: var(--main-green);
+    color: var(--text-main-color);
     text-align: center;
     padding: 100px 20px;
 }
@@ -127,7 +129,7 @@ nav .hamb {
 
 .hero-btn {
     background: white;
-    color: #000;
+    color: var(--fg-main-black);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -147,9 +149,22 @@ main section {
 }
 
 h2 {
-    color: #a8ac27;
-   border-left: 5px solid #a8ac27;
+    color: var(--main-green);
+    border-left: 5px solid var(--main-green);
     padding-left: 10px;
+}
+
+#tailor-madeService form {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#tailor-madeService > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #service .cards {
@@ -172,6 +187,10 @@ h2 {
 }
 
 #service .card > .card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
     width: 100%;
     height: 70%;
 }
@@ -179,6 +198,10 @@ h2 {
 #service .card > .card-data {
     width: 100%;
     height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #service .card h3 {
@@ -224,8 +247,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000;
-    color: white;
+    background: var(--bg-main-black);
+    color: var(--text-main-color);
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;

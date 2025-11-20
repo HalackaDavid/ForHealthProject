@@ -11,6 +11,7 @@
     </section>
 
     <main class="indent">
+<!--
         <section id="service">
             <h2>Naše akční nabídky</h2>
             <div class="cards">
@@ -37,6 +38,7 @@
                 </div>
             </div>
         </section>
+-->
     </main>
 
 </div>
