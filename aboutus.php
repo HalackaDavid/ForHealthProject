@@ -43,10 +43,6 @@
 <div class="content-container">
     
     <main class="indent">
-        <section>
-            <h2>O nás</h2>
-            <p>Jsme dynamická firma s dlouholetou zkušeností v oboru. Naším cílem je poskytovat kvalitní služby a individuální přístup ke každému klientovi.</p>
-        </section>
 
         <section id='aboutus'>
             <div class='cards'>

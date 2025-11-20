@@ -11,34 +11,12 @@
     </section>
 
     <main class="indent">
-<!--
-        <section id="service">
-            <h2>Naše akční nabídky</h2>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-date">
-                        <h3>Nabidka1</h3>
-                        <p>Nabidka1 - text</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-date">
-                        <h3>Nabidka2</h3>
-                        <p>Nabidka2 - text</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-date">
-                        <h3>Nabidka3</h3>
-                        <p>Nabidka3 - text</p>
-                    </div>
-                </div>
-            </div>
+
+        <section>
+            <h2>O nás</h2>
+            <p>Jsme dynamická firma s dlouholetou zkušeností v oboru. Naším cílem je poskytovat kvalitní služby a individuální přístup ke každému klientovi.</p>
         </section>
--->
+
     </main>
 
 </div>
